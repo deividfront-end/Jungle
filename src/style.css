@@ -1,0 +1,195 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+.content {
+  padding: 20px;
+}
+body {
+  background-image: url(./img/selva\ dia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Tema Claro (padrão) */
+body.light-theme {
+  color: #000000;
+}
+
+/* Tema Escuro */
+body.dark-theme {
+  background-image: url(./img/595.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+:root {
+  --containerBkMenu: rgba(181, 176, 176, 0.768);
+  --containerBkTituloH1: rgba(245, 245, 245, 0.512);
+  --containerLetraTitulo: rgba(255, 255, 255, 0.656);
+
+  --containerBkSubTituloH2: rgba(164, 155, 155, 0.656);
+  --containerLetraSubTitulo: rgba(255, 255, 255, 0.656);
+
+  --containerBKConteudoHome:rgba(139, 130, 130, 0.571);
+  --containerBKTextoHome:white;
+  --containerLetraConteudoHome:black;
+
+
+
+
+
+
+  
+
+  --corBox: rgba(0, 0, 0, 0.308);
+  --corLetras: rgb(255, 255, 255);
+  
+  --corBkRodape: rgb(4, 42, 13);
+  --corConteudo: rgb(95, 94, 97);
+}
+/* ... other theme-specific styles */
+
+.container-menu {
+  background-color: var(--containerBkMenu);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 12px;
+}
+nav {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  gap: 20px; /* Adjust the value as needed */
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav a {
+  font-family: "Sofadi One", system-ui;
+ 
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgb(251, 251, 251);
+  border-radius: 5px;
+  
+}
+nav a:hover{
+  background-color: green;
+  color:white;
+
+}
+
+
+.container-Titulo{
+  font-family: "Sofadi One", system-ui;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+main{
+padding: -50px;
+}
+
+.container-SubTitulo{
+  padding: 30px;
+  font-family: "Sofadi One", system-ui;
+letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 20px;
+  background-color: #00000075;
+}
+
+.container-conteudo-home{
+  margin-top: -50px;
+  height: 500px;
+  background-color: rgba(11, 11, 11, 0.539);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 50px;
+}
+
+.container-texto-home{
+
+   font-family: "Sofadi One", system-ui;
+
+  background-repeat: no-repeat;
+  background-size: 450%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 580px;
+  margin-top: -33px;
+  margin-bottom: 0px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: justify;
+
+
+}
+
+.container-redes{
+
+  background-color: var(--containerBKConteudoHome);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 0px;
+  gap:10px;
+  
+  padding: 20px;
+
+
+}
+.container-rodape{
+
+  background-color:rgba(53, 51, 51, 0.617);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px;
+  
+ 
+
+}
+.container-rodape a{
+  
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+text-decoration: none;
+color: white;
+}
+
+.jumping-icon {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+
+  }
+}
